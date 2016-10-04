@@ -13,4 +13,4 @@ main.pdf: $(SOURCES) $(IMAGES) $(LISTINGS)
 all:	main.pdf
 
 clean:
-	rm -f *.aux *.blg *.out *.bbl *.log *.toc *.bcf *-blx.bib *.run.xml *.lof *.lol *.lot main.pdf
+	rm -f *.aux *.blg *.out *.bbl *.log *.toc *.bcf *-blx.bib *.run.xml *.lof *.lol *.lot *.glg *.glo *.gls *.glsdefs *.xdy main.pdf
