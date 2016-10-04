@@ -38,6 +38,8 @@ block=none]{biblatex}
 }
 \usepackage{csquotes}
 \usepackage{pdfpages}
+\usepackage[toc,xindy]{glossaries}
+\makeglossaries
 \title{Extension X for Framework Y}
 \author{John Doe, Jane Smith}
 
@@ -46,6 +48,7 @@ block=none]{biblatex}
 \include{lst_styles}
 
 \begin{document}
+\include{glossary_entries}
 \thispagestyle{empty}
 \selectlanguage{english}
 
@@ -120,6 +123,7 @@ TODO anyone we'd like to thank
 \include{chapters/conclusion}
 
 \printbibliography
+\printglossaries
 
 %-----------------------------------------------------------------------------
 \appendix
