@@ -91,12 +91,8 @@ TODO result
 \end{abstract}
 %-----------------------------------------------------------------------------
 
-\chapter*{Thank You}
+\chapter*{Acknoledgements}
 TODO anyone we'd like to thank
-
-%-----------------------------------------------------------------------------
-\include{chapters/mgmt_summary}
-
 
 %-----------------------------------------------------------------------------
 % TOC, LOF, LOT, LOL
@@ -105,16 +101,22 @@ TODO anyone we'd like to thank
 \listoftables
 \lstlistoflistings
 
-%-----------------------------------------------------------------------------
 \pagebreak
 \pagenumbering{arabic}
 \setcounter{page}{1}
-\setcounter{secnumdepth}{3}
-\part{Technical Report}
 
 %-----------------------------------------------------------------------------
-\include{chapters/context}
-\include{chapters/foo} % FIXME placeholder chapter "foo"
+\part{Management Summary}\label{part:mgmtsummary}
+\include{chapters/mgmt_summary}
+
+%-----------------------------------------------------------------------------
+\part{Technical Report}
+%-----------------------------------------------------------------------------
+\include{chapters/scope}
+\include{chapters/requirements}
+\include{chapters/approach}
+\include{chapters/results}
+\include{chapters/discussion}
 \include{chapters/conclusion}
 
 \printbibliography
@@ -125,11 +127,19 @@ TODO anyone we'd like to thank
 \chapter{Self Reflection}
 TODO how did we perform, completion of goals, accuracy of estimated efforts, efficiency, resourcefulness
 
-\chapter{Project Plan}
+\chapter{Task Description}\label{ch:task-desc}
+TODO here goes the signed Task Description\\
+%\includepdf[pages={-}]{signed_task_description.pdf}
 
-\section{Organization}
-TODO roles, how we organize ourselves and how we communicate with each other
+%-----------------------------------------------------------------------------
+\chapter{Project Management Artefacts}
+\section{Project Plan}
+TODO import project plan from wiki\\
 
+\section{Risk Analysis}
+TODO import risks from wiki\\
+
+%-----------------------------------------------------------------------------
 \include{chapters/problems}
 
 TODO add any other appendix chapters here, like details about software X, usage manuals, ...\\
