@@ -1,4 +1,4 @@
-SOURCES = main.tex main.bib $(shell find chapters/ -type f)
+SOURCES = main.tex main.bib $(shell find . -depth 1 -name '*.tex' -type f)
 IMAGES := $(shell find img/ -type f)
 LISTINGS := $(shell find listings/ -type f)
 
